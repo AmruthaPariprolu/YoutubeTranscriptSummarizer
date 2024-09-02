@@ -1,0 +1,26 @@
+/* static/myapp/styles.css */
+
+body {
+    background-color:#53a8b6 ;
+    text-align: center;
+    margin-top: 250px;
+    font-weight: bold;
+}
+
+h1 {
+    color: #131111;
+    font-weight: bold;
+}
+
+#button{
+   background-color: #455d7a;
+   margin-top:20px black;
+   padding:10px;
+   font-size: 1rem;
+   border-radius:25px;
+   font-weight: bold;
+}
+
+#video_id {
+    margin-bottom: 15px; 
+}
