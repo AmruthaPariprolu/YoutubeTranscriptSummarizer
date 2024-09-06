@@ -1,6 +1,6 @@
 # YouTube Transcript Summarization
 
-This Django application fetches the transcript of a YouTube video using its video ID, summarizes it using a pre-trained model, and calculates the similarity between the transcript and its corresponding subtitles.
+This  application fetches the transcript of a YouTube video using its video ID, summarizes it using a pre-trained model, and calculates the similarity between the transcript and its corresponding subtitles.
 
 ## Overview
 
