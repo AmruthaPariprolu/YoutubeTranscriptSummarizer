@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        body {
+            /* display: flex;
+            justify-content: center;
+            align-items: center; */
+            height: 100vh;
+            margin: 0;
+        }
+        h1{
+            text-align: center;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border: 1px solid #ccc;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        label {
+            font-size: 28px;
+            margin: 10px 0;
+        }
+        input {
+            width: 300px;
+            height: 30px;
+            font-size: 26px;
+            padding: 5px;
+            margin: 10px 0;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 28px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        p{
+            font-size:28px;
+        }
+    </style>
+</head>
+<body>
+    <h1>YOUTUBE TRANSCRIPT SUMMARISER</h1>
+    <div id="main">
+    <form method="post" action="{% url 'get_transcript_long' %}">
+        {% csrf_token %}
+        <p>Enter the id of a youtube video. For example if the video link is <a href="https://youtu.be/-m2ih1rjM8?si=F2DkDJJXmv7xNlo7" target="_blank" style="color: #007BFF;">https://youtu.be/-m2ih1rjM8?si=F2DkDJJXmv7xNlo7</a>, the video id is "m2ih1rjM8"</p>
+        <label for="video_id"> Video ID:</label>
+        <input type="text" id="video_id" name="video_id" required><br><br>
+        
+        <button type="submit" id="Tbutton">Get Transcript and Summary</button>
+    </form>
+</div>
+</body>
+</html>
