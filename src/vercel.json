@@ -1,8 +1,11 @@
 {
+    "builds": [
+        { "src": "members/wsgi.py", "use": "@vercel/python" }
+    ],
     "rewrites": [
         {
             "source": "/(.*)",
-            "destination": "members/views.py"
+            "destination": "/members/wsgi.py"
         }
     ]
 }
